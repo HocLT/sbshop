@@ -8,6 +8,7 @@ package vn.aptech.demoshop.service.impl;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import vn.aptech.demoshop.entity.Customer;
 import vn.aptech.demoshop.repository.CustomerRepository;
 import vn.aptech.demoshop.service.CustomerService;
@@ -16,6 +17,7 @@ import vn.aptech.demoshop.service.CustomerService;
  *
  * @author quang
  */
+@Service
 public class CustomerServiceImpl implements CustomerService{
 
     @Autowired

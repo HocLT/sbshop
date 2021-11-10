@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+        <!-- set the encoding of your site -->
+        <meta charset="utf-8">
+        <!-- set the Compatible of your site -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- set the page title -->
+        <title>Shop Demo</title>
+        <!-- include the site Google Fonts stylesheet -->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CRoboto:300,400,500,700,900&display=swap" rel="stylesheet">
+        <!-- include the site bootstrap stylesheet -->
+        <link rel="stylesheet" th:href="@{/fe/css/bootstrap.css}">
+        <!-- include the site fontawesome stylesheet -->
+        <link rel="stylesheet" th:href="@{/fe/css/fontawesome.css}">
+        <!-- include the site stylesheet -->
+        <link rel="stylesheet" th:href="@{/fe/style.css}">
+        <!-- include theme plugins setting stylesheet -->
+        <link rel="stylesheet" th:href="@{/fe/css/plugins.css}">
+        <!-- include theme color setting stylesheet -->
+        <link rel="stylesheet" th:href="@{/fe/css/color.css}">
+        <!-- include theme responsive setting stylesheet -->
+        <link rel="stylesheet" th:href="@{/fe/css/responsive.css}">
+    </head>
+    <body>
+        <!-- pageWrapper -->
+        <div id="pageWrapper">
+            <!-- pageHeader -->
+            <div th:replace="~{fe/layout/partials/header :: header}"></div>
+
+            <!-- main -->
+
+            <div layout:fragment="contents"></div>
+
+            <!-- footer -->
+            <footer id="footer" class="container-fluid overflow-hidden px-lg-20">
+                <div class="copyRightHolder text-center pt-lg-5 pb-lg-4 py-3">
+                    <p class="mb-0">Coppyright 2021 by <a href="javascript:void(0);">Aptech</a> - All right reserved</p>
+                </div>
+            </footer>
+        </div>
+        <!-- include jQuery library -->
+        <script th:src="@{/fe/js/jquery-3.4.1.min.js}"></script>
+        <!-- include bootstrap popper JavaScript -->
+        <script th:src="@{/fe/js/popper.min.js}"></script>
+        <!-- include bootstrap JavaScript -->
+        <script th:src="@{/fe/js/bootstrap.min.js}"></script>
+        <!-- include custom JavaScript -->
+        <script th:src="@{/fe/js/jqueryCustome.js}"></script>
+    </body>
+</html>
